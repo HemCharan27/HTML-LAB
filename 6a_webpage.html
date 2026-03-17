@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Internal and External JavaScript</title>
+ <!-- Internal JavaScript -->
+ <script>
+   function showMessage(){
+     alert("Hello! This is from JavaScript.");
+   }
+ </script>
+</head>
+<body>
+ <h2>Embedding JavaScript Example</h2>
+ <script>
+   document.write("This is Internal JavaScript output.<br>");
+ </script>
+<!-- External JavaScript will run below -->
+<button onclick="showMessage()">Click Me</button>
+</body>
+</html>

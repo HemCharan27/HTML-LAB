@@ -1,0 +1,105 @@
+4a
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selector Forms</title>
+
+    <style>
+        p {
+            color: blue;
+        }
+
+        h1, h2 {
+            color: purple;
+        }
+
+        * {
+            font-family: Arial;
+        }
+
+        #para1 {
+            color: red;
+            font-size: 18px;
+        }
+
+        .highlight {
+            background-color: lightyellow;
+        }
+
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+
+        input[type="password"] {
+            border: 1px solid red;
+        }
+
+        div p {
+            color: green;
+        }
+
+        div > span {
+            color: brown;
+        }
+
+        h3 + p {
+            color: orange;
+        }
+
+        h3 ~ p {
+            color: gray;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        input:focus {
+            background-color: lightblue;
+        }
+
+        p::first-letter {
+            font-size: 30px;
+            color: darkred;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+        input::placeholder {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>This is first item</h1>
+    <h2>This is second item</h2>
+
+    <p>This is a paragraph</p>
+
+    <p id="para1">ID selector example</p>
+
+    <p class="highlight">Class selector example</p>
+
+    <div>
+        <p>Descendant selector example</p>
+        <span>Child selector example</span>
+    </div>
+
+    <h3>Adjacent selector example</h3>
+    <p>Adjacent sibling styling</p>
+    <p>General sibling styling</p>
+
+    <br>
+
+    <input type="text" placeholder="Enter Name"><br><br>
+    <input type="password" placeholder="Password"><br><br>
+
+    <!-- Google link (from your notes) -->
+    <a href="https://www.google.com">Google link</a>
+
+</body>
+</html>

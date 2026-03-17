@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marvel Background Image</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 200vh; 
+            text-align:center;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            height: 400px;
+
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/1200px-Marvel_Logo.svg.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+
+            transform: translate(-50%, -50%) skewX(4deg);
+            opacity: 0.8;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Avengers image</h1>
+    <p>scroll the page
+       The Avengers image styas fixed and titled.</p>
+    <p style ="margin-top:800px;">
+        Extra content to enable scrolling
+        Image does not move while scrolling.
+    </p>
+
+    
+</body>
+</html>
